@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
-
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 require "algolia/indices"
+if ['help', '-h', '--help'].include?(ARGV[0]) || ARGV.size < 2
+  ARGV[0] = 'help'
+end
+Algolia::Indices::CLI.start(ARGV)
