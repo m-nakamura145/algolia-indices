@@ -1,7 +1,7 @@
 # algolia-indices
 [![Gem Version](https://badge.fury.io/rb/algolia-indices.svg)](https://badge.fury.io/rb/algolia-indices)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/m-nakamura145/algolia-indices/blob/master/LICENSE.txt)
-
+[![CircleCI](https://circleci.com/gh/m-nakamura145/algolia-indices/tree/master.svg?style=svg)](https://circleci.com/gh/m-nakamura145/algolia-indices/tree/master)
 
 A command line tool for [Algolia](https://www.algolia.com). algolia-indices has the following features:
 
