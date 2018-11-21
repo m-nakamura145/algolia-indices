@@ -15,6 +15,10 @@ module Algolia
         http_post(batch_write_operations_path, parameters)
       end
 
+      def clear_index
+        http_post(clear_index_path)
+      end
+
       private
 
       def http_client
@@ -34,7 +38,7 @@ module Algolia
         }
       end
 
-      def http_post(path, parameters = {})
+      def http_post(path, parameters = {}.to_json)
         http_client.post do |req|
           req.url path
           req.body = parameters
@@ -47,6 +51,10 @@ module Algolia
 
       def batch_write_operations_path
         "/1/indexes/#{@index_name}/batch"
+      end
+
+      def clear_index_path
+        "/1/indexes/#{@index_name}/clear"
       end
     end
   end
