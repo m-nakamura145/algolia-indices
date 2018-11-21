@@ -1,6 +1,8 @@
 # algolia-indices
 
-A command line tool for [Algolia](https://www.algolia.com).
+A command line tool for [Algolia](https://www.algolia.com). algolia-indices has the following features:
+
+* **Import records**: You can import the record of the yaml file into the specified algolia index.   
 
 ## Installation
 
@@ -20,7 +22,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO
+```
+# Import the record of the yaml file into the specified algolia index
+$ algolia-indices import [API-KEY] [APPLICATION-ID] [INDEX-NAME] [FILE-PATH]
+
+```
+
+### Algolia API-Key
+
+You must generate an API key that gave the Add object and Delete Object permissions.
+
+see [Algolia API Key document](https://www.algolia.com/doc/guides/security/api-keys/#api-key-restrictions).
+
+### Import data format
+
+Create data source in `yaml` format.
+
+```yaml
+records:
+  - name: sample_restaurant1
+  - name: sample_restaurant2
+
+```
 
 ## Development
 
