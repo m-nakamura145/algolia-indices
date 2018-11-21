@@ -2,7 +2,8 @@
 
 A command line tool for [Algolia](https://www.algolia.com). algolia-indices has the following features:
 
-* **Import records**: You can import the record of the yaml file into the specified algolia index.   
+* **Import records**: You can import the record of the yaml file into the specified algolia index.
+* **Clear an index's context**: You can clear records from specified algolia index.   
 
 ## Installation
 
@@ -22,10 +23,12 @@ Or install it yourself as:
 
 ## Usage
 
-```
+```sh
 # Import the record of the yaml file into the specified algolia index
 $ algolia-indices import [API-KEY] [APPLICATION-ID] [INDEX-NAME] [FILE-PATH]
 
+# Clear records from specified algolia index
+$ algolia-indices clear [API-KEY] [APPLICATION-ID] [INDEX-NAME]
 ```
 
 ### Algolia API-Key
